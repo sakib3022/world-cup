@@ -89,11 +89,12 @@ body {
 /* sidebar(fixed) and world cup & upcoming match stylesheet */
 
 .tournament-details {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     margin-left: 30px;
-    margin-top: 400px;
+    margin-top: 400px; */
+    height: 250px;
     background-color: rgb(25, 24, 24);
     padding: 20px 20px;
     border-radius: 10px;
@@ -206,12 +207,13 @@ footer ul li {
     }
 
     .tournament-details {
-        position: static;
+        /* position: static; */
         display: flex;
         flex-direction: column;
         background-color: white;
-        margin-left: 0px;
-        margin-top: 0px;
+        /* margin-left: 0px;
+        margin-top: 0px; */
+        /* margin-bottom: 0px; */
         padding: 20px 20px;
         border-radius: 10px;
         text-align: center;
@@ -278,12 +280,12 @@ footer ul li {
     }
 
     .tournament-details {
-        position: static;
+        /* position: static; */
         display: flex;
         flex-direction: row;
         background-color: white;
-        margin-left: 0px;
-        margin-top: 0px;
+        /* margin-left: 0px;
+        margin-top: 0px; */
         padding: 20px 20px;
         border-radius: 10px;
         justify-content: center;
