@@ -231,7 +231,7 @@ footer ul li {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0px;
-        grid-column-gap: 10px;
+        grid-row-gap: 10px;
         padding-left: 0px;
     }
 
@@ -302,7 +302,7 @@ footer ul li {
     .transfer-blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 8px;
+        grid-gap: 10px;
         padding-left: 0px;
     }
 
@@ -335,7 +335,7 @@ footer ul li {
 
 }
 
-@media screen and (width:1024px) {
+@media screen and (min-width:993px) and (max-width:1280px) {
     .transfer-blogs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -354,13 +354,13 @@ footer ul li {
 
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1281px) {
 
     .transfer-blogs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 8px;
-        padding-left: 120px;
+        padding-left: 140px;
     }
 
 }
