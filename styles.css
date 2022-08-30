@@ -1,0 +1,347 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* banner stylesheet */
+
+.banner {
+    padding: 0px 50px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 24, 24);
+}
+
+.banner-title {
+    color: white;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.banner-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.btn-animation {
+    border-radius: 5px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 17px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.5;
+}
+
+.btn-animation span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-animation span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+
+.btn-animation:hover span {
+    padding-right: 25px;
+}
+
+.btn-animation:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.banner-item {
+    width: 50%;
+}
+
+.banner-img {
+    transition: transform 0.5s;
+
+}
+
+.banner-img:hover {
+    transform: translate(-100px, -100px);
+}
+
+.world-cup-details {
+    margin-top: 100px;
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-around;
+
+}
+
+/* sidebar(fixed) and world cup & upcoming match stylesheet */
+
+.tournament-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-top: 265px;
+    background-color: rgb(25, 24, 24);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.tournament-details a {
+    text-decoration: none;
+    color: black;
+}
+
+.tournament-details h2 {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tournament-details .bg-color {
+    background-color: rgb(238, 9, 9);
+    color: white;
+}
+
+.transfer-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    padding-left: 70px;
+}
+
+.blog {
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 10px;
+
+}
+
+.match-info {
+    width: 280px;
+    padding: 0px 15px;
+}
+
+.duration-comments {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 150px;
+    padding-bottom: 15px;
+
+}
+
+.view-more {
+    display: none;
+}
+
+/* footer stylesheet */
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(25, 24, 24);
+    color: white;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 10px 30px;
+
+}
+
+.social-icon .fa-brands {
+    padding: 0px 35px;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width:688px) {
+    .banner {
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-title {
+        width: 100%;
+    }
+
+    .banner-item {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 300px;
+    }
+
+    .world-cup-details {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+
+    }
+
+    .tournament-details {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+
+
+    .tournament-details h2 {
+        background-color: white;
+        border: 1px solid rgb(205, 205, 205);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+
+    .transfer-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        grid-column-gap: 8px;
+        padding-left: 0px;
+    }
+
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer ul li {
+        list-style: none;
+        padding: 20px 0px;
+
+    }
+
+    .social-icon .fa-brands {
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:689px) and (max-width:992px) {
+    .banner {
+        padding: 0px 10px;
+        display: flex;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 350px;
+    }
+
+    .world-cup-details {
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+
+    }
+
+    .tournament-details {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+
+
+    .tournament-details h2 {
+        background-color: white;
+        border: 1px solid rgb(205, 205, 205);
+        padding: 5px 60px;
+        border-radius: 5px;
+    }
+
+
+    .transfer-blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+        padding-left: 0px;
+    }
+
+    /* view all button stylesheet*/
+
+    .view-more {
+        display: block;
+        text-align: center;
+    }
+
+    .view-more button {
+        background-color: rgb(238, 9, 9);
+        font-size: 30px;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .transfer-blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+        padding-left: 100px;
+    }
+
+}
